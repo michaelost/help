@@ -1,11 +1,115 @@
 <html>
   <head>
-    <link rel="stylesheet" href="1.css">
+      <style type="text/css">
+        .header {
+          width: 100%;
+          height: 100px;
+          background-color: #7cb342;
+          /*display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: space-around;
+          */
+          position: relative;
+        }
+        .title_left {
+          color: #ffffff;
+          font-size: 12px;
+          position: absolute;
+          left: 20px;
+          width: auto;
+          bottom: 30px;
+        }
+        .title_right {
+          color: #ffffff;
+          font-size: 12px;
+          position: absolute;       
+          right: 20px;
+          bottom: 30px;
+        }
+
+        .footer {
+          background-color: #bdbdbd;
+          width: 100%;
+          height: 200px;
+        }
+
+        .footer_content {
+          width: 100%;
+          height: 100%;
+          padding-top: 30px;         
+        }
+
+        .submenu {
+          line-height: 5px;
+          color: #616161;
+          padding-left: 50px;
+        }
+
+        .main_content {
+          padding-left: 10px;
+        }
+
+        .table {
+          margin: 20px 0 20px 0;
+        }
+
+        .table caption {
+          text-align: left;
+          font-weight: 700;
+        }
+        .table th {
+          text-align: left;
+          font-weight: 400;
+          font-size: 10px;
+        }
+
+        .table tr th:nth-child(2) {
+          color: blue;
+        }
+        .table tr th:nth-child(1) {
+          min-width: 100px;
+        }
+
+        .ubersicht tr:nth-child(2) th:nth-child(2) {
+          color: black;
+        }
+        .ubersicht tr:nth-child(3) th:nth-child(2) {
+          color: green;
+        }
+        .ubersicht tr:nth-child(4) th:nth-child(2) {
+          color: red;
+        }
+
+        .green {
+          color: green;
+        }
+
+        .red {
+          color: red;
+        }
+
+        .padding40 th {
+          padding-left: 40px;
+        }
+
+        .blue {
+          color: blue;
+        }
+
+        .top {
+          display: flex;
+        }
+
+        .text {
+          padding-left: 25px;
+        }
+    </style>
   </head>
   <body>
     <div class="header">
-      <span class="title">FROSCHKONIG.NET</span>
-      <span class="title italic ">
+      <span class="title_left">FROSCHKONIG.NET</span>
+      <span class="title_right italic ">
         <i>Eine Marke der VGA GmbH</i>
       </span>
     </div>
@@ -151,16 +255,16 @@
     </div>
     <div class="footer">
       <div class="footer_content">
-        <span class="submenu"><b>VGA GmbH</b></span>
-        <span class="submenu">
+        <div class="submenu"><b>VGA GmbH</b></div>
+        <div class="submenu">
           <p>Am Weidendamm 1A, 10117 Berlin</p>
           <p><b>Tel</b>.: 030 59 00 99 920</p>
-        </span>
-        <span class="submenu">
+        </div>
+        <div class="submenu">
           <p><b>Email</b> norbert.wosny@vga.de</p>
           <p>www.froschkönig.net</p>
           
-        </span>    
+        </div>    
       </div>
     </div>
   </body>
